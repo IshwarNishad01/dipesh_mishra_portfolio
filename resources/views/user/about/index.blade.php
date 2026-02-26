@@ -32,7 +32,7 @@
         </div>
 
         <!-- ----------------------- ABOUT DIPESH MISHRA ---------------- -->
-        <section class="about-area section-paddingt30" id="vision" style="padding-top: 20px;">
+        <section class="about-area section-paddingt30" id="vision">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg-6">
@@ -42,7 +42,7 @@
                     <div class="col-lg-6">
                         <h2>About Dipesh Mishra</h2>
                         <p>Dipesh Mishra is a youth-focused entrepreneur and institution builder committed to transforming
-                            India’s youth into confident, skilled, safe, and self-reliant leaders.</p>
+                            India's youth into confident, skilled, safe, and self-reliant leaders.</p>
                         <p>His work integrates enterprise development, skill enhancement, leadership building, adventure
                             training, and social safety awareness into one structured empowerment ecosystem.</p>
                         <p>He believes that youth are not just the future of India — they are the driving force of India’s
@@ -97,13 +97,14 @@
                     <div class="col-md-6 col-lg-4 mb-50">
                         <div class="single-cat p-4 shadow-sm bg-white">
                             <h4>iYouth Pvt. Ltd.</h4>
-                            <p><strong>Vision:</strong> Youth-driven enterprise ecosystem generating employment & promoting
-                                self-employment.</p>
+                            <p><strong>Vision:</strong> To build a youth-driven enterprise ecosystem that generates employment, promotes self-employment, and strengthens local manufacturing.</p>
                             <ul>
-                                <li>Scalable Youth-Centric Brands</li>
-                                <li>Private & White Label Manufacturing</li>
-                                <li>District Distribution Networks</li>
-                                <li>Women & Youth Enterprises</li>
+                                <li><strong>Mission</strong></li>
+                                <li>Develop scalable youth-centric brands</li>
+                                <li>Promote private-label and white-label manufacturing</li>
+                                <li>Create district-level distribution networks</li>
+                                <li>Enable women-led and youth-led enterprises</li>
+                                <li>Generate sustainable livelihood opportunities</li>
                             </ul>
                         </div>
                     </div>
@@ -114,10 +115,11 @@
                             <h4>Chhattisgarh Youth Federation</h4>
                             <p><strong>Vision:</strong> Skilled, Safe & Empowered Youth.</p>
                             <ul>
-                                <li>Leadership Programs</li>
-                                <li>Skill Development</li>
-                                <li>Youth Awareness Campaigns</li>
-                                <li>Grassroots Leadership Building</li>
+                                <li><strong>Mission</strong></li>
+                                <li>Empowerment of youth through skill development</li>
+                                <li>confidence building</li>
+                                <li>leadership training, and proper motivation</li>
+                                <li></li>
                             </ul>
                         </div>
                     </div>
@@ -126,12 +128,10 @@
                     <div class="col-md-6 col-lg-4 mb-50">
                         <div class="single-cat p-4 shadow-sm bg-white">
                             <h4>Chhattisgarh Adventure Sports Association</h4>
-                            <p><strong>Vision:</strong> Confident, Fearless & Adventure-Ready Youth.</p>
+                            <p><strong>Vision:</strong> Confident, Fearless and Adventure-Ready Youth.</p>
                             <ul>
-                                <li>Adventure Training</li>
-                                <li>Disaster Management</li>
-                                <li>Adventure Tourism Promotion</li>
-                                <li>Professional Competitions</li>
+                                <li><strong>Mission</strong></li>
+                                <li>Providing structured adventure facilities and safety-oriented training to develop resilience, discipline, and confidence among youth.</li>
                             </ul>
                         </div>
                     </div>
@@ -143,7 +143,7 @@
         <!-- YOUTH EMPOWERMENT MODEL -->
         <section class="about-area section-paddingt30 bg-light">
             <div class="container text-center">
-                <h2>Unified Concept – The Youth Empowerment Model</h2>
+                <h2>Unified Concept - The Youth Empowerment Model</h2>
                 <p>All institutions operate under one integrated framework:</p>
                 <h4 style="font-weight:600;">Youth + Skill + Safety + Enterprise + Leadership = Empowered Society</h4>
             </div>
@@ -191,7 +191,7 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg-8">
                         <div class="wantToWork-caption">
-                            <h2>Let’s Build a Skilled, Safe & Self-Reliant India Together</h2>
+                            <h2>Let's Build a Skilled, Safe & Self-Reliant India Together</h2>
                             <p>We invite collaboration with Government Institutions, NGOs, Manufacturers, Investors,
                                 Educational Institutions & Youth Leaders.</p>
                         </div>

@@ -41,7 +41,7 @@
                                     featureType: "all",
                                     stylers: [{
                                             saturation: -90
-                                        },
+                                           },
                                         {
                                             lightness: 50
                                         }

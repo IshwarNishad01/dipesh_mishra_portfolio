@@ -1,170 +1,154 @@
 @extends('user.layout.app')
-@section('title','services us')
+@section('title','Organizational Leadership & Initiatives')
 @section('content')
-
 
 <main>
 
-        <!-- Header Start -->
-        <div class="slider-area ">
-            <div class="slider-height2 d-flex align-items-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="hero-cap">
-                                <h2>My Services</h2>
-                                <nav aria-label="breadcrumb ">
-                                    <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="#">My Services</a></li> 
-                                    </ol>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Header End -->
-        <!-- Categories Area Start -->
-        <section class="categories-area categories-area2  section-padding30">
+    <!-- HERO SECTION -->
+    <div class="slider-area">
+        <div class="slider-height2 d-flex align-items-center">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-cat text-center mb-50">
-                            <div class="cat-icon">
-                                <span class="flaticon-pen"></span>
-                            </div>
-                            <div class="cat-cap">
-                                <h5><a href="services.html">UI/UX Design</a></h5>
-                                <p>Free resource that will help nderstand thecv designc process and improve theroi  nderstand the design process andisei impro are of vquality.</p>
-                            </div>
+                    <div class="col-xl-12">
+                        <div class="hero-cap text-center">
+                            <h2>Organizational Leadership & Initiatives</h2>
+                            <p>Youth + Skill + Safety + Enterprise + Leadership = Empowered Society</p>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-cat text-center mb-50">
-                            <div class="cat-icon">
-                                <span class="flaticon-speaker"></span>
-                            </div>
-                            <div class="cat-cap">
-                                <h5><a href="services.html">Digital Marketing</a></h5>
-                                <p>Free resource that will help nderstand thecv designc process and improve theroi  nderstand the design process andisei impro are of vquality.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-cat text-center mb-50">
-                            <div class="cat-icon">
-                                <span class="flaticon-portfolio"></span>
-                            </div>
-                            <div class="cat-cap">
-                                <h5><a href="services.html">Website Design</a></h5>
-                                <p>Free resource that will help nderstand thecv designc process and improve theroi  nderstand the design process andisei impro are of vquality.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-cat text-center mb-50">
-                            <div class="cat-icon">
-                                <span class="flaticon-portfolio"></span>
-                            </div>
-                            <div class="cat-cap">
-                                <h5><a href="services.html">Website Design</a></h5>
-                                <p>Free resource that will help nderstand thecv designc process and improve theroi  nderstand the design process andisei impro are of vquality.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-cat text-center mb-50">
-                            <div class="cat-icon">
-                                <span class="flaticon-speaker"></span>
-                            </div>
-                            <div class="cat-cap">
-                                <h5><a href="services.html">Digital Marketing</a></h5>
-                                <p>Free resource that will help nderstand thecv designc process and improve theroi  nderstand the design process andisei impro are of vquality.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-cat text-center mb-50">
-                            <div class="cat-icon">
-                                <span class="flaticon-pen"></span>
-                            </div>
-                            <div class="cat-cap">
-                                <h5><a href="services.html">UI/UX Design</a></h5>
-                                <p>Free resource that will help nderstand thecv designc process and improve theroi  nderstand the design process andisei impro are of vquality.</p>
-                            </div>
-                        </div>
-                    </div>
-                 </div>
-            </div>
-        </section>
-        <!-- Categories Area End -->
-        <!-- Want To Work Start -->
-        <section class="wantToWork-area w-padding2">
-            <div class="container">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-xl-6 col-lg-8 col-md-8">
-                        <div class="wantToWork-caption wantToWork-caption2">
-                            <h2>Dont worry for contact i`m available</h2>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-2 col-md-3">
-                        <a href="#" class="btn btn-black f-right">Contact Me Now</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Want To Work End -->
-        <!-- Brand Area Start -->
-        <div class="brand-area section-padding30">
-            <div class="container">
-                <div class="brand-active brand-border pt-50 pb-40">
-                    <div class="single-brand">
-                        <img src="assets/img/gallery/brand1.png" alt="">
-                    </div>
-                    <div class="single-brand">
-                        <img src="assets/img/gallery/brand2.png" alt="">
-                    </div>
-                    <div class="single-brand">
-                        <img src="assets/img/gallery/brand3.png" alt="">
-                    </div>
-                    <div class="single-brand">
-                        <img src="assets/img/gallery/brand4.png" alt="">
-                    </div>
-                    <div class="single-brand">
-                        <img src="assets/img/gallery/brand2.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Brand Area End -->
-        <!-- Contact Info Start -->
-        <div class="contact-info-area w-padding2" data-background="assets/img/gallery/section_bg04.jpg">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-xl-5 col-lg-7">
-                      <div class="contact-caption mb-50">
-                            <h3>If Not Now, When? Let’s Work Together!</h3>
-                            <p>Consectetur adipiscing elit, sed do eiusmod tempor ididunt ut labore et dolore magna aliqua. Quis ipsum suspendisces gravida. Risus commodo viverra.</p>
-                            <img src="assets/img/gallery/sin.png" alt="">
-                      </div>
-                    </div>
-                    <div class="col-xl-5 col-lg-5">
-                        <form action="#" class="contact-wrapper">
-                            <input type="text" name="name" placeholder="Full Name">
-                            <input type="email" name="email" placeholder="Email Address">
-                            <textarea name="message" id="message" placeholder="Your Message"></textarea>
-                            <button class="submit-btn2" type="submit">Send Message</button>
-                        </form>
+    </div>
+
+    <!-- ORGANIZATIONAL LEADERSHIP -->
+    <section class="categories-area section-padding30">
+        <div class="container">
+            <div class="row">
+
+                <!-- iYouth Pvt. Ltd. -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-cat mb-50">
+                        <h4>iYouth Pvt. Ltd.</h4>
+                        <p><strong>Vision</strong><br>
+                        To build a youth-driven enterprise ecosystem that generates employment, promotes self-employment, and strengthens local manufacturing.</p>
+
+                        <p><strong>Mission</strong></p>
+                        <ul>
+                            <li>Develop scalable youth-centric brands</li>
+                            <li>Promote private-label and white-label manufacturing</li>
+                            <li>Create district-level distribution networks</li>
+                            <li>Enable women-led and youth-led enterprises</li>
+                            <li>Generate sustainable livelihood opportunities</li>
+                        </ul>
+
+                        <p><strong>Core Focus</strong><br>
+                        Enterprise Development<br>
+                        Manufacturing & Distribution<br>
+                        Skill-Based Micro Businesses<br>
+                        Women Entrepreneurship</p>
                     </div>
                 </div>
+
+                <!-- CYF -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-cat mb-50">
+                        <h4>Chhattisgarh Youth Federation (CYF)</h4>
+                        <p>Registered under Chhattisgarh Society Registration Act, 1973</p>
+
+                        <p><strong>Vision</strong><br>
+                        Skilled, Safe and Empowered Youth.</p>
+
+                        <p><strong>Mission</strong><br>
+                        Empowerment of youth through skill development, confidence building, leadership training, and proper motivation.</p>
+
+                        <p><strong>Objectives</strong></p>
+                        <ul>
+                            <li>To make youth confident</li>
+                            <li>To create safe and secure environments</li>
+                            <li>To increase social awareness</li>
+                            <li>To develop youth for nation building</li>
+                            <li>To strengthen leadership at grassroots level</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CASA -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-cat mb-50">
+                        <h4>Chhattisgarh Adventure Sports Association (CASA)</h4>
+                        <p>Registered under Chhattisgarh Society Registration Act, 1973</p>
+
+                        <p><strong>Vision</strong><br>
+                        Confident, Fearless and Adventure-Ready Youth.</p>
+
+                        <p><strong>Mission</strong><br>
+                        Providing structured adventure facilities and safety-oriented training to develop resilience, discipline, and confidence among youth.</p>
+
+                        <p><strong>Objectives</strong></p>
+                        <ul>
+                            <li>Develop adventure destinations</li>
+                            <li>Provide training in adventure sports & disaster management</li>
+                            <li>Promote adventure tourism</li>
+                            <li>Organize professional adventure competitions</li>
+                            <li>Build physical and mental strength among youth</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
-        <!-- Contact Info End -->
+    </section>
 
-    </main>
+    <!-- ONGOING PROJECTS -->
+    <section class="section-padding30 bg-light">
+        <div class="container text-center">
+            <h2>Ongoing Projects and Initiatives</h2>
+            <p>“आत्मनिर्भर युवा-आत्मनिर्भर छत्तीसगढ़” www.iyouth.in</p>
+            <p>Employment www.iyouthjob.in</p>
+            <p>Self-employment www.iyouthstore.in</p>
+        </div>
+    </section>
 
+    <!-- UPCOMING PROJECTS -->
+    <section class="section-padding30">
+        <div class="container text-center">
+            <h2>Upcoming Projects and Initiatives</h2>
+            <p>Restaurants www.iyoutheats.in</p>
+            <p>News & Media www.iyouthnews.in</p>
+            <p>Fitness www.iyouthfitness.in</p>
+            <p>Skill www.iyouthskill.in</p>
+            <p>Education www.iyouthsiksha.in</p>
+            <p>Youth awareness and Adventure Sports www.cgyouth.in</p>
+        </div>
+    </section>
 
+    <!-- VISION 2030 -->
+    <section class="section-padding30 bg-light">
+        <div class="container text-center">
+            <h2>Vision 2030 Roadmap</h2>
+            <p>Phase 1 – District-Level Skill & Youth Activation</p>
+            <p>Phase 2 – Enterprise & Distribution Expansion (State Level)</p>
+            <p>Phase 3 – National Youth Enterprise Network</p>
+            <p>Phase 4 – Integrated Youth Economic & Leadership Ecosystem</p>
+        </div>
+    </section>
+
+    <!-- PARTNERSHIP INVITATION -->
+    <section class="wantToWork-area w-padding2">
+        <div class="container text-center">
+            <h2>Let’s build a skilled, safe, and self-reliant India together.</h2>
+            <p>We invite collaboration with:</p>
+            <p>
+                Government Institutions<br>
+                Manufacturers<br>
+                NGOs<br>
+                Educational Institutions<br>
+                Investors<br>
+                Youth Leaders
+            </p>
+        </div>
+    </section>
+
+</main>
 
 @endsection
