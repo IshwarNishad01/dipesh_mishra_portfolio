@@ -1,0 +1,235 @@
+@extends('user.layout.app')
+@section('title', 'About Dipesh Mishra')
+@section('content')
+
+    <main>
+
+        <!-- ----------- HERO SECTION ---------------- -->
+        <div class="slider-area">
+            <div class="slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap text-center">
+                                <h1>Dipesh Mishra</h1>
+                                <p>Visionary Entrepreneur | Youth Institution Builder</p>
+                                <p>Founder & CEO - iYouth Pvt. Ltd.<br>
+                                    Founder & President - Chhattisgarh Youth Federation<br>
+                                    Founder & President - Chhattisgarh Adventure Sports Association
+                                </p>
+                                <span class="hero-tagline">Empowering Youth. Strengthening Society. Building a Self-Reliant
+                                    India.</span>
+                                <div class="hero__btn mt-4">
+                                    <a href="#partnership" class="btn hero-btn">Partner With Us</a>
+                                    <a href="#vision" class="btn border-btn ml-15">Explore Vision</a>
+                                    <a href="#contact" class="btn border-btn ml-15">Contact Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------------------- ABOUT DIPESH MISHRA ---------------- -->
+        <section class="about-area section-paddingt30" id="vision" style="padding-top: 20px;">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-6">
+                        <img src="{{ asset('user/assets/img/gallery/aboutme.png') }}" alt="Dipesh Mishra"
+                            class="img-fluid mb-30">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2>About Dipesh Mishra</h2>
+                        <p>Dipesh Mishra is a youth-focused entrepreneur and institution builder committed to transforming
+                            India’s youth into confident, skilled, safe, and self-reliant leaders.</p>
+                        <p>His work integrates enterprise development, skill enhancement, leadership building, adventure
+                            training, and social safety awareness into one structured empowerment ecosystem.</p>
+                        <p>He believes that youth are not just the future of India — they are the driving force of India’s
+                            present growth story.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PREMIUM MAGAZINE BIO -->
+        <section class="about-area section-paddingt30 bg-light" style="padding: 5px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center mb-60">
+                        <h2>Premium Magazine Bio</h2>
+                        <p class="pera1">Dipesh Mishra represents a new generation of leadership rooted in purpose and
+                            execution. As the founder of multiple youth-driven institutions, he is building platforms where
+                            youth become skilled, confident, safe, and economically independent contributors to society. His
+                            mission is to create a youth-powered ecosystem that strengthens families, communities, and the
+                            nation.</p>
+                    </div>
+                    <div class="col-lg-12">
+                        <h3>Long Version</h3>
+                        <p>Dipesh Mishra is an emerging Indian entrepreneur and youth institution architect dedicated to
+                            building a structured and sustainable youth empowerment ecosystem. As Founder & CEO of iYouth
+                            Pvt. Ltd., he is developing youth-centric brands and enterprise models that generate employment
+                            and promote self-employment. His approach integrates manufacturing, distribution networks, and
+                            grassroots participation to build scalable economic opportunities.</p>
+                        <p>As Founder & President of Chhattisgarh Youth Federation, he works toward organizing and
+                            empowering youth through leadership programs, skill development initiatives, awareness
+                            campaigns, and social responsibility platforms.</p>
+                        <p>Through Chhattisgarh Adventure Sports Association, he promotes adventure sports as a powerful
+                            medium for discipline, mental strength, resilience, and safety awareness — shaping youth into
+                            confident and fearless individuals.</p>
+                        <p>His broader vision connects enterprise, skill development, safety awareness, women-led
+                            entrepreneurship, and youth leadership into one unified mission: building a self-reliant youth
+                            and a stronger India.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ORGANIZATIONAL LEADERSHIP -->
+        <section class="services-area section-padding3">
+            <div class="container">
+                <div class="section-tittle text-center mb-70">
+                    <h2>Organizational Leadership</h2>
+                </div>
+                <div class="row">
+
+                    <!-- iYouth -->
+                    <div class="col-md-6 col-lg-4 mb-50">
+                        <div class="single-cat p-4 shadow-sm bg-white">
+                            <h4>iYouth Pvt. Ltd.</h4>
+                            <p><strong>Vision:</strong> Youth-driven enterprise ecosystem generating employment & promoting
+                                self-employment.</p>
+                            <ul>
+                                <li>Scalable Youth-Centric Brands</li>
+                                <li>Private & White Label Manufacturing</li>
+                                <li>District Distribution Networks</li>
+                                <li>Women & Youth Enterprises</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- CYF -->
+                    <div class="col-md-6 col-lg-4 mb-50">
+                        <div class="single-cat p-4 shadow-sm bg-white">
+                            <h4>Chhattisgarh Youth Federation</h4>
+                            <p><strong>Vision:</strong> Skilled, Safe & Empowered Youth.</p>
+                            <ul>
+                                <li>Leadership Programs</li>
+                                <li>Skill Development</li>
+                                <li>Youth Awareness Campaigns</li>
+                                <li>Grassroots Leadership Building</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- CASA -->
+                    <div class="col-md-6 col-lg-4 mb-50">
+                        <div class="single-cat p-4 shadow-sm bg-white">
+                            <h4>Chhattisgarh Adventure Sports Association</h4>
+                            <p><strong>Vision:</strong> Confident, Fearless & Adventure-Ready Youth.</p>
+                            <ul>
+                                <li>Adventure Training</li>
+                                <li>Disaster Management</li>
+                                <li>Adventure Tourism Promotion</li>
+                                <li>Professional Competitions</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- YOUTH EMPOWERMENT MODEL -->
+        <section class="about-area section-paddingt30 bg-light">
+            <div class="container text-center">
+                <h2>Unified Concept – The Youth Empowerment Model</h2>
+                <p>All institutions operate under one integrated framework:</p>
+                <h4 style="font-weight:600;">Youth + Skill + Safety + Enterprise + Leadership = Empowered Society</h4>
+            </div>
+        </section>
+
+        <!-- CORE PILLARS -->
+        <section class="services-area services-padding bg-light">
+            <div class="container">
+                <div class="section-tittle text-center mb-50">
+                    <h2>Core Pillars</h2>
+                </div>
+                <div class="row text-center">
+
+                    <div class="col-lg-3 col-md-6 mb-30">
+                        <h5>Youth Skill Empowerment</h5>
+                        <p>Skill Development Programs | Entrepreneurship Training | Leadership Workshops | Confidence
+                            Building</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-30">
+                        <h5>Youth Safety & Structured Growth</h5>
+                        <p>Adventure Safety Protocols | Disaster Management Training | Community Safety Awareness |
+                            Responsible Youth Engagement</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-30">
+                        <h5>Enterprise & Employment Creation</h5>
+                        <p>Youth-Led Business Models | Women-Led Enterprise Units | Micro Distribution Networks | Local
+                            Manufacturing Promotion</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-30">
+                        <h5>Women Empowerment</h5>
+                        <p>Skill-Based Income Opportunities | Rural Women Business Participation | Financial Independence |
+                            Leadership Development</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PARTNERSHIP -->
+        <section class="wantToWork-area w-padding2" id="partnership">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-8">
+                        <div class="wantToWork-caption">
+                            <h2>Let’s Build a Skilled, Safe & Self-Reliant India Together</h2>
+                            <p>We invite collaboration with Government Institutions, NGOs, Manufacturers, Investors,
+                                Educational Institutions & Youth Leaders.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <a href="#contact" class="btn btn-black">Partner With Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-info-area section-padding" id="contact">
+            <div class="container">
+                <div class="section-tittle text-center mb-50">
+                    <h2>Contact</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-5 mb-30">
+                        <h4>Dipesh Mishra</h4>
+                        <p>Chhattisgarh, India</p>
+                        <p>Email: demo@email.com</p>
+                        <p>Phone: +91-1234567891</p>
+                    </div>
+                    <div class="col-lg-7">
+                        <form action="#" method="POST" class="contact-wrapper">
+                            @csrf
+                            <input type="text" name="name" placeholder="Full Name" required>
+                            <input type="email" name="email" placeholder="Email Address" required>
+                            <input type="text" name="phone" placeholder="Phone Number">
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                            <button class="submit-btn2" type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+@endsection
