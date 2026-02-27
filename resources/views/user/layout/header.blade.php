@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="{{ asset('user/assets/css/nice-select.css') }}">
     <link rel="stylesheet" href="{{ asset('user/assets/css/style.css') }}">
     {{-- ------------- font ------------------ --}}
+    {{-- font awesome --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -34,8 +36,16 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     {{-- ----------------------------------------------------------- --}}
-
+    {{-- ----- AOS Link --------- --}}
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    {{-- ------ AOS End -------- --}}
     <style>
+        /* ------------ center card ------------- */
+        .row.center-card{
+            justify-content: center;
+            align-items: stretch;
+        }
+
         #typewriter::after {
             content: "|";
             animation: blink 1s infinite;
@@ -155,6 +165,152 @@
         body {
             overflow-x: hidden;
         }
+
+        /* --------------- ROAD MAP START  --------------- */
+        /* Roadmap Section */
+        .vision-roadmap {
+            position: relative;
+            background: #f9f9f9;
+        }
+
+        .roadmap {
+            position: relative;
+            margin: 50px 0;
+            padding: 20px 0;
+        }
+
+        /* Center vertical line */
+        .roadmap::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, #0d6efd, #198754);
+            transform: translateX(-50%);
+        }
+
+        /* Roadmap items */
+        .roadmap-item {
+            width: 50%;
+            padding: 20px 40px;
+            position: relative;
+        }
+
+        .roadmap-item .content {
+            background: #fff;
+            padding: 20px 25px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: 0.3s ease;
+        }
+
+        .roadmap-item .content:hover {
+            transform: translateY(-8px);
+        }
+
+        /* Circle point */
+        .roadmap-item::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            width: 20px;
+            height: 20px;
+            background: #198754;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        /* Left side */
+        .roadmap-item.left {
+            left: 0;
+            text-align: right;
+        }
+
+        .roadmap-item.left::before {
+            right: -10px;
+        }
+
+        /* Right side */
+        .roadmap-item.right {
+            left: 50%;
+        }
+
+        .roadmap-item.right::before {
+            left: -10px;
+        }
+
+        /* ---- for mobile --- */
+        @media (max-width: 768px) {
+
+            .roadmap::before {
+                left: 20px;
+            }
+
+            .roadmap-item {
+                width: 100%;
+                padding-left: 60px;
+                padding-right: 20px;
+                text-align: left;
+            }
+
+            .roadmap-item.right {
+                left: 0;
+            }
+
+            .roadmap-item::before {
+                left: 10px;
+            }
+        }
+
+        /* -------- ROADMAP END -------------------- */
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 100px;
+            right: 25px;
+            background-color: #25D366;
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 28px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s ease;
+        }
+
+        /* Hover Effect */
+        .whatsapp-float:hover {
+            background-color: #1ebe5d;
+            transform: scale(1.1);
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .whatsapp-float {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        /* ----------- floating whatsapp end ------------ */
     </style>
 </head>
 
@@ -186,7 +342,7 @@
                                             <li><a href="{{ route('about.index') }}">About</a></li>
                                             <li><a href="{{ route('services.index') }}">Services</a></li>
                                             <li><a href="{{ route('portfolio.index') }}">Portfolio</a></li>
-                                            <li>
+                                            {{-- <li>
                                                 <a href="#">Page</a>
                                                 <ul class="submenu">
                                                     <li><a href="{{ route('page.blog') }}">Blog</a></li>
@@ -195,7 +351,7 @@
                                                     <li><a href="{{ route('page.portfolioDetails') }}">Portfolio
                                                             Details</a></li>
                                                 </ul>
-                                            </li>
+                                            </li> --}}
                                             <li><a href="{{ route('contact.index') }}">Contact</a></li>
                                         </ul>
                                     </nav>

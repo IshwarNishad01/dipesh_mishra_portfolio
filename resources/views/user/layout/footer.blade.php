@@ -20,7 +20,10 @@
                     <div class="col-xl-9 col-lg-8">
                         <div class="footer-copy-right">
                             <p>
-                                Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                                Copyright &copy;
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script>
                                 All rights reserved | This template is made with
                                 <i class="fa fa-heart" aria-hidden="true"></i>
                                 by <a href="https://colorlib.com" target="_blank">Rays It & Design World</a>
@@ -90,5 +93,20 @@
 <script src="{{ asset('user/assets/js/plugins.js') }}"></script>
 <script src="{{ asset('user/assets/js/main.js') }}"></script>
 
+{{-- AOS(animation On Scroll ) JS --}}
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, // animation speed
+        easing: 'ease-in-out',
+        once: true // animation only once
+    });
+</script>
+{{-- ------------ AOS JS End ------------------------ --}}
+<!-- WhatsApp Floating Button -->
+        <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
 </body>
+
 </html>

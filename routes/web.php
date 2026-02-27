@@ -12,20 +12,20 @@ Route::controller(UserIndexController::class)->name('user.')->group(function(){
     Route::get('/','index');
 });
 // -------------- about us controller -------------------
-Route::controller(AboutUsController::class)->prefix('about')->name('about.')->group(function(){
-    Route::get('/index','index')->name('index');
+Route::controller(AboutUsController::class)->name('about.')->group(function(){
+    Route::get('/about','index')->name('index');
 });
 // ------------- services controller ---------------------
-Route::controller(ServicesController::class)->prefix('services')->name('services.')->group(function(){
-    Route::get('/index','index')->name('index');
+Route::controller(ServicesController::class)->name('services.')->group(function(){
+    Route::get('/services','index')->name('index');
 });
 // --------------- portfolio controller --------------------
-Route::controller(PortfolioController::class)->prefix('portfolio')->name('portfolio.')->group(function(){
-    Route::get('/index','index')->name('index');
+Route::controller(PortfolioController::class)->name('portfolio.')->group(function(){
+    Route::get('/portfolio','index')->name('index');
 });
 // ---------------- contact controller -----------------
-Route::controller(ContactController::class)->prefix('contact')->name('contact.')->group(function(){
-    Route::get('/index','index')->name('index');
+Route::controller(ContactController::class)->name('contact.')->group(function(){
+    Route::get('/contact','index')->name('index');
 });
 // ---------------- page controller -----------------
 Route::controller(PageController::class)->prefix('page')->name('page.')->group(function(){

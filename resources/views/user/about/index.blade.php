@@ -5,25 +5,19 @@
     <main>
 
         <!-- ----------- HERO SECTION ---------------- -->
-        <div class="slider-area">
+        <div class="slider-area ">
             <div class="slider-height2 d-flex align-items-center">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
-                            <div class="hero-cap text-center">
-                                <h1>Dipesh Mishra</h1>
-                                <p>Visionary Entrepreneur | Youth Institution Builder</p>
-                                <p>Founder & CEO - iYouth Pvt. Ltd.<br>
-                                    Founder & President - Chhattisgarh Youth Federation<br>
-                                    Founder & President - Chhattisgarh Adventure Sports Association
-                                </p>
-                                <span class="hero-tagline">Empowering Youth. Strengthening Society. Building a Self-Reliant
-                                    India.</span>
-                                <div class="hero__btn mt-4">
-                                    <a href="#partnership" class="btn hero-btn">Partner With Us</a>
-                                    <a href="#vision" class="btn border-btn ml-15">Explore Vision</a>
-                                    <a href="#contact" class="btn border-btn ml-15">Contact Now</a>
-                                </div>
+                            <div class="hero-cap">
+                                <h2 data-aos="fade-up" >About me</h2>
+                                <nav aria-label="breadcrumb ">
+                                    <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="#">About me</a></li> 
+                                    </ol>
+                                </nav>
                             </div>
                         </div>
                     </div>
@@ -36,10 +30,10 @@
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg-6">
-                        <img src="{{ asset('user/assets/img/gallery/aboutme.png') }}" alt="Dipesh Mishra"
-                            class="img-fluid mb-30">
+                        <img src="{{ asset('user/assets/img/dipesh_mishra_img.webp') }}" alt="Dipesh Mishra"
+                            class="img-fluid mb-30" data-aos="fade-right">
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-left">
                         <h2>About Dipesh Mishra</h2>
                         <p>Dipesh Mishra is a youth-focused entrepreneur and institution builder committed to transforming
                             India's youth into confident, skilled, safe, and self-reliant leaders.</p>
@@ -53,7 +47,7 @@
         </section>
 
         <!-- PREMIUM MAGAZINE BIO -->
-        <section class="about-area section-paddingt30 bg-light" style="padding: 5px;">
+        <section class="about-area section-paddingt30 bg-light" style="padding: 5px;" data-aos="fade-up">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center mb-60">
