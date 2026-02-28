@@ -41,7 +41,7 @@
     {{-- ------ AOS End -------- --}}
     <style>
         /* ------------ center card ------------- */
-        .row.center-card{
+        .row.center-card {
             justify-content: center;
             align-items: stretch;
         }
@@ -49,6 +49,21 @@
         #typewriter::after {
             content: "|";
             animation: blink 1s infinite;
+        }
+
+        #typewriter {
+            font-size: 25px;
+            max-width: 100%;
+            width: 100%;
+            white-space: normal;
+            /* Allows wrapping */
+        }
+
+        @media (min-width: 992px) {
+            #typewriter {
+                white-space: nowrap;
+                /* Single line */
+            }
         }
 
         @keyframes blink {
@@ -175,8 +190,8 @@
 
         .roadmap {
             position: relative;
-            margin: 50px 0;
-            padding: 20px 0;
+            margin: 0px 0;
+            padding: 0px 0;
         }
 
         /* Center vertical line */
@@ -193,13 +208,13 @@
         /* Roadmap items */
         .roadmap-item {
             width: 50%;
-            padding: 20px 40px;
+            padding: 20px 20px;
             position: relative;
         }
 
         .roadmap-item .content {
             background: #fff;
-            padding: 20px 25px;
+            padding: 10px 15px;
             border-radius: 10px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             transition: 0.3s ease;
@@ -311,6 +326,25 @@
         }
 
         /* ----------- floating whatsapp end ------------ */
+        /* ----------- contact form ------------------- */
+        .contact-wrapper input,
+        .contact-wrapper textarea {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 20px;
+            border: 2px solid #e0e0e0 !important;
+            border-radius: 6px;
+            outline: none;
+            transition: all 0.3s ease;
+            font-size: 15px;
+        }
+
+        
+        .contact-wrapper input:focus,
+        .contact-wrapper textarea:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+        }
     </style>
 </head>
 
@@ -341,7 +375,7 @@
                                             <li><a href="{{ url('/') }}">Home</a></li>
                                             <li><a href="{{ route('about.index') }}">About</a></li>
                                             <li><a href="{{ route('services.index') }}">Services</a></li>
-                                            <li><a href="{{ route('portfolio.index') }}">Portfolio</a></li>
+                                            {{-- <li><a href="{{ route('portfolio.index') }}">Portfolio</a></li> --}}
                                             {{-- <li>
                                                 <a href="#">Page</a>
                                                 <ul class="submenu">
@@ -352,13 +386,13 @@
                                                             Details</a></li>
                                                 </ul>
                                             </li> --}}
-                                            <li><a href="{{ route('contact.index') }}">Contact</a></li>
+                                            {{-- <li><a href="{{ route('contact.index') }}">Contact</a></li> --}}
                                         </ul>
                                     </nav>
                                 </div>
 
                                 <div class="header-right-btn f-right d-none d-xl-block ml-20">
-                                    <a href="#" class="btn header-btn">Get Free Consultent</a>
+                                    <a href="{{ route('contact.index') }}" class="btn header-btn">Contact Us</a>
                                 </div>
 
                             </div>

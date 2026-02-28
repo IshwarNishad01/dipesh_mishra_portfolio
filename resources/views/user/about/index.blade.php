@@ -11,11 +11,11 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap">
-                                <h2 data-aos="fade-up" >About me</h2>
+                                <h2 data-aos="fade-up">About me</h2>
                                 <nav aria-label="breadcrumb ">
                                     <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="#">About me</a></li> 
+                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="#">About me</a></li>
                                     </ol>
                                 </nav>
                             </div>
@@ -31,7 +31,7 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg-6">
                         <img src="{{ asset('user/assets/img/dipesh_mishra_img.webp') }}" alt="Dipesh Mishra"
-                            class="img-fluid mb-30" data-aos="fade-right">
+                            class="img-fluid mb-30" data-aos="fade-right" style="height: 550px;">
                     </div>
                     <div class="col-lg-6" data-aos="fade-left">
                         <h2>About Dipesh Mishra</h2>
@@ -59,7 +59,7 @@
                             nation.</p>
                     </div>
                     <div class="col-lg-12">
-                        <h3>Long Version</h3>
+                        {{-- <h3>Long Version</h3> --}}
                         <p>Dipesh Mishra is an emerging Indian entrepreneur and youth institution architect dedicated to
                             building a structured and sustainable youth empowerment ecosystem. As Founder & CEO of iYouth
                             Pvt. Ltd., he is developing youth-centric brands and enterprise models that generate employment
@@ -79,19 +79,23 @@
             </div>
         </section>
 
-        <!-- ORGANIZATIONAL LEADERSHIP -->
-        <section class="services-area section-padding3">
-            <div class="container">
-                <div class="section-tittle text-center mb-70">
-                    <h2>Organizational Leadership</h2>
-                </div>
-                <div class="row">
-
-                    <!-- iYouth -->
-                    <div class="col-md-6 col-lg-4 mb-50">
-                        <div class="single-cat p-4 shadow-sm bg-white">
-                            <h4>iYouth Pvt. Ltd.</h4>
-                            <p><strong>Vision:</strong> To build a youth-driven enterprise ecosystem that generates employment, promotes self-employment, and strengthens local manufacturing.</p>
+        {{-- ---------------------------------------- --}}
+        <!-- Start Align Area -->
+        <div class="whole-wrap">
+           
+                    <h2 class="section-tittle text-center  mt-5">Organizational Leadership</h2>
+                
+            <div class="container box_1170">
+                <div class="section-top-border">
+                    <h3 class="mb-30">iYouth Pvt. Ltd.</h3>
+                    <div class="row">
+                        <div class="col-md-3" data-aos="fade-up">
+                            <img src="{{ asset('user/assets/img/iYouth_pvt_ltd.webp') }}" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-9 mt-sm-20" data-aos="fade-up">
+                            <p>
+                            <p><strong>Vision:</strong> To build a youth-driven enterprise ecosystem that generates
+                                employment, promotes self-employment, and strengthens local manufacturing.</p>
                             <ul>
                                 <li><strong>Mission</strong></li>
                                 <li>Develop scalable youth-centric brands</li>
@@ -100,13 +104,18 @@
                                 <li>Enable women-led and youth-led enterprises</li>
                                 <li>Generate sustainable livelihood opportunities</li>
                             </ul>
+                            </p>
                         </div>
                     </div>
-
-                    <!-- CYF -->
-                    <div class="col-md-6 col-lg-4 mb-50">
-                        <div class="single-cat p-4 shadow-sm bg-white">
-                            <h4>Chhattisgarh Youth Federation</h4>
+                </div>
+                <div class="section-top-border">
+                    <h3 class="mb-30">Chhattisgarh Youth Federation</h3>
+                    <div class="row">
+                        <div class="col-md-3" data-aos="fade-up">
+                            <img src="{{ asset('user/assets/img/cg_youth_federation.webp') }}" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-9 mt-sm-20" data-aos="fade-up">
+                            <p>
                             <p><strong>Vision:</strong> Skilled, Safe & Empowered Youth.</p>
                             <ul>
                                 <li><strong>Mission</strong></li>
@@ -115,27 +124,37 @@
                                 <li>leadership training, and proper motivation</li>
                                 <li></li>
                             </ul>
+                            </p>
+                            </p>
                         </div>
                     </div>
-
-                    <!-- CASA -->
-                    <div class="col-md-6 col-lg-4 mb-50">
-                        <div class="single-cat p-4 shadow-sm bg-white">
-                            <h4>Chhattisgarh Adventure Sports Association</h4>
+                </div>
+                <div class="section-top-border">
+                    <h3 class="mb-30">Chhattisgarh Adventure Sports Association</h3>
+                    <div class="row">
+                        <div class="col-md-3" data-aos="fade-up">
+                            <img src="{{ asset('user/assets/img/cg_adventure_sports.webp') }}" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-9 mt-sm-20" data-aos="fade-up">
+                            <p>
                             <p><strong>Vision:</strong> Confident, Fearless and Adventure-Ready Youth.</p>
                             <ul>
                                 <li><strong>Mission</strong></li>
-                                <li>Providing structured adventure facilities and safety-oriented training to develop resilience, discipline, and confidence among youth.</li>
+                                <li>Providing structured adventure facilities and safety-oriented training to develop
+                                    resilience, discipline, and confidence among youth.</li>
                             </ul>
+                            </p>
+                            </p>
                         </div>
                     </div>
-
                 </div>
             </div>
-        </section>
+        </div>
+        <!-- End Align Area -->
+
 
         <!-- YOUTH EMPOWERMENT MODEL -->
-        <section class="about-area section-paddingt30 bg-light">
+        <section class="about-area section-paddingt30 bg-light" data-aos="fade-up">
             <div class="container text-center">
                 <h2>Unified Concept - The Youth Empowerment Model</h2>
                 <p>All institutions operate under one integrated framework:</p>
@@ -144,7 +163,7 @@
         </section>
 
         <!-- CORE PILLARS -->
-        <section class="services-area services-padding bg-light">
+        <section class="services-area services-padding bg-light" data-aos="fade-up">
             <div class="container">
                 <div class="section-tittle text-center mb-50">
                     <h2>Core Pillars</h2>
@@ -178,52 +197,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- PARTNERSHIP -->
-        <section class="wantToWork-area w-padding2" id="partnership">
-            <div class="container">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-lg-8">
-                        <div class="wantToWork-caption">
-                            <h2>Let's Build a Skilled, Safe & Self-Reliant India Together</h2>
-                            <p>We invite collaboration with Government Institutions, NGOs, Manufacturers, Investors,
-                                Educational Institutions & Youth Leaders.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <a href="#contact" class="btn btn-black">Partner With Us</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTACT SECTION -->
-        <section class="contact-info-area section-padding" id="contact">
-            <div class="container">
-                <div class="section-tittle text-center mb-50">
-                    <h2>Contact</h2>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-5 mb-30">
-                        <h4>Dipesh Mishra</h4>
-                        <p>Chhattisgarh, India</p>
-                        <p>Email: demo@email.com</p>
-                        <p>Phone: +91-1234567891</p>
-                    </div>
-                    <div class="col-lg-7">
-                        <form action="#" method="POST" class="contact-wrapper">
-                            @csrf
-                            <input type="text" name="name" placeholder="Full Name" required>
-                            <input type="email" name="email" placeholder="Email Address" required>
-                            <input type="text" name="phone" placeholder="Phone Number">
-                            <textarea name="message" placeholder="Your Message" required></textarea>
-                            <button class="submit-btn2" type="submit">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </main>
 
 @endsection

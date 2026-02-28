@@ -9,12 +9,12 @@
             <div class="single-slider slider-height d-flex align-items-center">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-8 col-lg-8 col-md-10">
+                        <div class="col-xl-4 col-lg-8 col-md-10">
                             <div class="hero__caption">
-                                <span style="font-size: 26px;">Empowering Youth. Strengthening Society. <br> Building a
+                                <span style="font-size: 21px;">Empowering Youth. Strengthening Society. <br> Building a
                                     Self-Reliant India.</span>
                                 <h1>Dipesh Mishra</h1>
-                                <p id="typewriter" style="font-size:25px;"></p>
+                                <p id="typewriter"></p>
                                 {{-- <p>
                                     Visionary Entrepreneur | Youth Institution Builder <br>
                                     Founder & CEO – iYouth Pvt. Ltd. <br>
@@ -129,7 +129,7 @@
             <div class="container">
 
                 <div class="section-tittle text-center mb-60" data-aos="fade-up">
-                    <h2>UNIFIED CONCEPT – THE YOUTH EMPOWERMENT MODEL</h2>
+                    <h2>UNIFIED CONCEPT - THE YOUTH EMPOWERMENT MODEL</h2>
                     <p>All institutions operate under one integrated framework:</p>
                     <h4 class="mt-3" style="font-weight:600;">
                         Youth + Skill + Safety + Enterprise + Leadership = Empowered Society
@@ -139,11 +139,12 @@
                 <div class="row mt-5 ">
 
                     <!-- Ongoing Projects -->
-                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
-                        <div class="single-cat p-4 shadow-sm bg-white">
-                            <img src="{{ asset('user/assets/img/1768205612.webp') }}" alt="Dipesh Mishra"
+                    <h3>Ongoing Projects & Initiatives</h3>
+                    <div class="row" data-aos="fade-up">
+                        <div class="single-cat p-4 m-4 shadow-sm bg-white col-12 col-md-3 ">
+                            <img src="{{ asset('user/assets/img/cg_youth.webp') }}" alt="Dipesh Mishra"
                                 class="img-fluid mb-30" data-aos="fade-left">
-                            <h4>Ongoing Projects & Initiatives</h4>
+                            
                             <ul class="mt-3">
                                 <li class="mt-3">
                                     <a href="https://www.iyouth.in" style="color:black; font-size:16px;">
@@ -152,35 +153,107 @@
                                 </li>
                                 <li class="mt-2">
                                     <a href="https://www.iyouthjob.in" style="color:black; font-size:16px;">
-                                        Employment
+                                        It is a dedicated people’s movement run by the Chhattisgarh Youth Federation, aimed at empowering the youth of Chhattisgarh to become self-reliant, confident, and capable
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="single-cat p-4 m-4 shadow-sm bg-white col-12 col-md-3 ">
+                            <img src="{{ asset('user/assets/img/1768205612.webp') }}" alt="Dipesh Mishra"
+                                class="img-fluid mb-30" data-aos="fade-left">
+                            
+                            <ul class="mt-3">
+                                <li class="mt-3">
+                                    <a href="https://www.iyouth.in" style="color:black; font-size:16px;">
+                                        <strong>Employment</strong>
                                     </a>
                                 </li>
                                 <li class="mt-2">
-                                    <a href="https://www.iyouthstore.in" style="color:black; font-size:16px;">
-                                        Self-employment
+                                    <a href="https://www.iyouthjob.in" style="color:black; font-size:16px;">
+                                        A flexible job platform for hourly, freelance, and project-based hiring.
+                                    </a>
+                            </ul>
+                        </div>
+                        <div class="single-cat p-4 m-4 shadow-sm bg-white col-12 col-md-3 ">
+                            <img src="{{ asset('user/assets/img/self_emp.webp') }}" alt="Dipesh Mishra"
+                                class="img-fluid mb-30" data-aos="fade-left">
+                            
+                            <ul class="mt-3">
+                                <li class="mt-3">
+                                    <a href="https://www.iyouth.in" style="color:black; font-size:16px;">
+                                        <strong>Self-employment</strong>
                                     </a>
                                 </li>
-
+                                <li class="mt-2">
+                                    <a href="https://www.iyouthjob.in" style="color:black; font-size:16px;">
+                                        A digital marketplace to promote youth-driven products and businesses.
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
 
                     <!-- Upcoming Projects -->
-                    <div class="col-12 col-md-6 col-lg-4 " data-aos="fade-up">
-                        <div class="single-cat p-4 shadow-sm bg-white">
+                    <h3>Upcoming Projects & Initiatives</h3>
+                    <div class="row" data-aos="fade-up">
+                        <div class="single-cat p-4 shadow-sm bg-white m-4 col-12 col-md-3 ">
+                            <img src="{{ asset('user/assets/img/Restaurants_img.webp') }}" alt="Dipesh Mishra"
+                                class="img-fluid mb-30" data-aos="fade-left">
+                            <ul class="m-3">
+                                <li style="color:black; font-size:16px;"><strong>Restaurants – </strong><a href="https://www.iyoutheats.in" target="_blank">iyoutheats.in</a></li>
+                                <li>
+                                        Food and restaurant franchise opportunities driven by youth entrepreneurship.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="single-cat p-4 shadow-sm bg-white m-4 col-12 col-md-3 ">
                             <img src="{{ asset('user/assets/img/1768206038.webp') }}" alt="Dipesh Mishra"
                                 class="img-fluid mb-30" data-aos="fade-left">
-                            <h4>Upcoming Projects & Initiatives</h4>
+                            <ul class="m-3">
+                                <li  style="color:black; font-size:16px;"><strong>News & Media – </strong><a href="https://www.iyouthnews.in" target="_blank">iyouthnews.in</a>
+                                </li>
+                                <li>
+                                    Youth-focused news, opinions, opportunities, and social stories.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="single-cat p-4 shadow-sm bg-white m-4 col-12 col-md-3 ">
+                            <img src="{{ asset('user/assets/img/fitness_img.webp') }}" alt="Dipesh Mishra"
+                                class="img-fluid mb-30" data-aos="fade-left">
+                            <ul class="m-3">
+                                <li class="mb-3"><strong>Fitness – </strong><a href="https://www.iyouthfitness.in" target="_blank">iyouthfitness.in</a>
+                                </li>
+                                <li>
+                                    Fitness and wellness solutions through gyms, yoga centers, and franchise models.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="single-cat p-4 shadow-sm bg-white  m-4 col-12 col-md-3 ">
+                            <img src="{{ asset('user/assets/img/skill_dev_img.webp') }}" alt="Dipesh Mishra"
+                                class="img-fluid mb-30" data-aos="fade-left">
+                            <ul class="m-3">
+                                <li class="mb-3"><strong>Skill – </strong><a href="https://www.iyouthskill.in" target="_blank">iyouthskill.in</a></li>
+                                <li>
+                                    Skill development programs in technology, arts, music, dance, and practical life skills.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="single-cat p-4 shadow-sm bg-white  m-4 col-12 col-md-3 ">
+                            <img src="{{ asset('user/assets/img/cg_youth.webp') }}" alt="Dipesh Mishra"
+                                class="img-fluid mb-30" data-aos="fade-left">
+                            <ul class="m-3">
+                                <li><strong>Education – </strong><a href="https://www.iyouthsiksha.in" target="_blank">iyouthsiksha.in</a>
+                                </li>
+                                <li>
+                                   
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="single-cat p-4 shadow-sm bg-white m-4 col-12 col-12 col-md-3 ">
+                            <img src="{{ asset('user/assets/img/cg_youth.webp') }}" alt="Dipesh Mishra"
+                                class="img-fluid mb-30" data-aos="fade-left">
                             <ul class="mt-3">
-                                <li>Restaurants – <a href="https://www.iyoutheats.in" target="_blank">iyoutheats.in</a></li>
-                                <li>News & Media – <a href="https://www.iyouthnews.in" target="_blank">iyouthnews.in</a>
-                                </li>
-                                <li>Fitness – <a href="https://www.iyouthfitness.in" target="_blank">iyouthfitness.in</a>
-                                </li>
-                                <li>Skill – <a href="https://www.iyouthskill.in" target="_blank">iyouthskill.in</a></li>
-                                <li>Education – <a href="https://www.iyouthsiksha.in" target="_blank">iyouthsiksha.in</a>
-                                </li>
-                                <li>Youth Awareness & Adventure – <a href="https://www.cgyouth.in"
+                                <li><strong>Youth Awareness & Adventure – </strong><a href="https://www.cgyouth.in"
                                         target="_blank">cgyouth.in</a></li>
                             </ul>
                         </div>
@@ -197,7 +270,7 @@
                 <div class="row">
                     <div class="col-xl-6 col-lg-8 col-md-10">
                         <!-- Section Tittle -->
-                        <div class="section-tittle mb-70">
+                        <div class="section-tittle mb-35">
                             <h2>CORE PILLARS</h2>
                         </div>
                     </div>
