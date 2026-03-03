@@ -143,36 +143,45 @@
             "Founder & President – Chhattisgarh Adventure Sports Association"
         ];
 
-        const speed = 70; // typing speed
-        const eraseSpeed = 40; // deleting speed
-        const delayBetween = 1500; // delay before deleting
-        let textIndex = 0;
-        let charIndex = 0;
-        const typewriter = document.getElementById("typewriter");
+        const speed = 70;
+        const eraseSpeed = 40;
+        const delayBetween = 1500;
 
-        function type() {
-            if (charIndex < texts[textIndex].length) {
-                typewriter.innerHTML += texts[textIndex].charAt(charIndex);
-                charIndex++;
-                setTimeout(type, speed);
-            } else {
-                setTimeout(erase, delayBetween);
+        function startTypewriter(elementId) {
+
+            let textIndex = 0;
+            let charIndex = 0;
+            const typewriter = document.getElementById(elementId);
+
+            function type() {
+                if (charIndex < texts[textIndex].length) {
+                    typewriter.innerHTML += texts[textIndex].charAt(charIndex);
+                    charIndex++;
+                    setTimeout(type, speed);
+                } else {
+                    setTimeout(erase, delayBetween);
+                }
             }
+
+            function erase() {
+                if (charIndex > 0) {
+                    typewriter.innerHTML = texts[textIndex].substring(0, charIndex - 1);
+                    charIndex--;
+                    setTimeout(erase, eraseSpeed);
+                } else {
+                    textIndex++;
+                    if (textIndex >= texts.length) textIndex = 0;
+                    setTimeout(type, 500);
+                }
+            }
+
+            type();
         }
 
-        function erase() {
-            if (charIndex > 0) {
-                typewriter.innerHTML = texts[textIndex].substring(0, charIndex - 1);
-                charIndex--;
-                setTimeout(erase, eraseSpeed);
-            } else {
-                textIndex++;
-                if (textIndex >= texts.length) textIndex = 0;
-                setTimeout(type, 500);
-            }
-        }
+        // Call function for multiple IDs
+        startTypewriter("typewriter");
+        startTypewriter("typewriter1");
 
-        type();
     });
 </script>
 </body>

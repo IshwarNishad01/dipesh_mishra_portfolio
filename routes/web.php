@@ -9,7 +9,7 @@ use App\Http\Controllers\User\UserIndexController;
 use Illuminate\Support\Facades\Route;
 
 Route::controller(UserIndexController::class)->name('user.')->group(function(){
-    Route::get('/','index');
+    Route::get('/','index')->name('index');
 });
 // -------------- about us controller -------------------
 Route::controller(AboutUsController::class)->name('about.')->group(function(){
