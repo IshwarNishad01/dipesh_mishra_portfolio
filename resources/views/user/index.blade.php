@@ -524,7 +524,7 @@
                     </div>
 
                     <div class="col-lg-7">
-                        <form action="#" method="POST" class="contact-wrapper">
+                        <form action="{{route('contact.store')}}" method="POST" class="contact-wrapper">
                             @csrf
                             <input type="text" name="name" placeholder="Full Name" required>
                             <input type="email" name="email" placeholder="Email Address" required>

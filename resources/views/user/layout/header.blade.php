@@ -359,8 +359,9 @@
                         <!-- Logo -->
                         <div class="col-xl-2 col-lg-2 col-md-1">
                             <div class="logo">
-                                <a href="{{ url('/') }}">
-                                    <img src="{{ asset('user/assets/img/logo/logo.png') }}" alt="">
+                                <a href="{{ url('/') }}" style="color: rgb(255, 106, 0);font-size:20px;font-weight:bold;">
+                                    Dipesh Mishra
+                                    {{-- <img src="{{ asset('user/assets/img/logo/logo.png') }}" alt=""> --}}
                                 </a>
                             </div>
                         </div>

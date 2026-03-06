@@ -35,7 +35,8 @@
                         <h2 class="contact-title" data-aos="fade-up">Get in Touch</h2>
                     </div>
                     <div class="col-lg-8">
-                        <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                        <form  action="{{route('contact.store')}}" method="post">
+                            @csrf
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-group">
@@ -54,7 +55,7 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject">
+                                        <input class="form-control" name="phone" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter contact number'" placeholder="Enter contact number">
                                     </div>
                                 </div>
                             </div>
