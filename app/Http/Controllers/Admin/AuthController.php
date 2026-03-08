@@ -22,7 +22,7 @@ class AuthController extends Controller
     {
         User::create([
             "name" => $request->name,
-            "email" => $request->email,
+            "email" => $request->email,            
             "password" => Hash::make($request->password)
         ]);
         return redirect()->route('auth.login');
@@ -40,6 +40,6 @@ class AuthController extends Controller
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        return redirect()->route('auth.login');
+        return redirect()->route('admin.login');
     }
 }

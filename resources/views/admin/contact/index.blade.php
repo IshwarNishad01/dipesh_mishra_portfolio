@@ -8,9 +8,9 @@
             <h1>General Tables</h1>
             <nav>
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="">Home</a></li>
                     <li class="breadcrumb-item">Tables</li>
-                    <li class="breadcrumb-item active">General</li>
+                    <li class="breadcrumb-item active">Contact</li>
                 </ol>
             </nav>
         </div><!-- End Page Title -->
@@ -41,14 +41,14 @@
                                     @foreach ($contacts as $contact)
                                         <tr>
                                             <th scope="row">{{ $i++ }}</th>
-                                            <td>{{ $contact->name }}</td>
-                                            <td>{{ $contact->email }}</td>
-                                            <td>{{ $contact->phone }}</td>
-                                            <td>{{ $contact->message }}</td>
+                                            <td>{{ $contact->name ?? 'N/A' }}</td>
+                                            <td>{{ $contact->email ?? 'N/A' }}</td>
+                                            <td>{{ $contact->phone ?? 'N/A' }}</td>
+                                            <td>{{ $contact->message ?? 'N/A' }}</td>
                                             <td>
-                                              <a href="{{ route('blog.destroy', $contact->id) }}" class="ms-3">
+                                              {{-- <a href="{{ route('admin.blog.destroy', $contact->id) }}" class="ms-3">
                                                     <i class="bi bi-trash-fill text-danger fs-5"></i>
-                                                </a>
+                                                </a> --}}
                                                 
                                             </td>
 

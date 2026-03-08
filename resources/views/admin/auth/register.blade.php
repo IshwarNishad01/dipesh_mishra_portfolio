@@ -53,7 +53,7 @@
                     <p class="text-center small">Enter your personal details to create account</p>
                   </div>
 
-                  <form class="row g-3 needs-validation" action="{{route('auth.register.store')}}" method="POST">
+                  <form class="row g-3 needs-validation" action="{{route('admin.register.store')}}" method="POST">
                         @csrf
                     <div class="col-12">
                       <label for="yourName" class="form-label">Your Name</label>
@@ -80,7 +80,7 @@
                     <div class="col-12">
                       <p class="small mb-0">
                         Already have an account?
-                        <a href="{{route('auth.login')}}">Log in</a>
+                        <a href="{{route('admin.login')}}">Log in</a>
                       </p>
                     </div>
 

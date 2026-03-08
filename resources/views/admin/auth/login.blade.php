@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Pages / Register - NiceAdmin Bootstrap Template</title>
+  <title>Login</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -53,7 +53,7 @@
                     <p class="text-center small">Enter your personal details to login</p>
                   </div>
 
-                  <form class="row g-3 needs-validation" action="{{route('auth.login.check')}}" method="POST">
+                  <form class="row g-3 needs-validation" action="{{route('admin.login.check')}}" method="POST">
                         @csrf
                     <div class="col-12">
                       <label for="yourEmail" class="form-label">Your Email</label>
@@ -74,7 +74,7 @@
                     <div class="col-12">
                       <p class="small mb-0">
                         don't have an account?
-                        <a href="{{route('auth.register')}}">Register</a>
+                        <a href="{{route('admin.register')}}">Register</a>
                       </p>
                     </div>
 

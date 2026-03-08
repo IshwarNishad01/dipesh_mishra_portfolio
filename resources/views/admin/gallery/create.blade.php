@@ -24,7 +24,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Add images</h5>
 
-                            <form method="POST" action="{{route('gallery.store')}}" enctype="multipart/form-data">
+                            <form method="POST" action="{{route('admin.gallery.store')}}" enctype="multipart/form-data">
                                 @csrf
 
                                 <!-- News Title -->

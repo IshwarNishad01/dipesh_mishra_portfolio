@@ -24,7 +24,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Add News</h5>
 
-                            <form method="POST" action="{{route('blog.store')}}" enctype="multipart/form-data">
+                            <form method="POST" action="{{route('admin.blog.store')}}" enctype="multipart/form-data">
                                 @csrf
 
                                 <!-- News Title -->

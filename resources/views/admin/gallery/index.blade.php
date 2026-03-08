@@ -22,7 +22,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Gallery </h5>
-                            <a href="{{ route('gallery.create') }}" class="btn btn-primary">+ Add images </a>
+                            <a href="{{ route('admin.gallery.create') }}" class="btn btn-primary">+ Add images </a>
 
                             <!-- Table with hoverable rows -->
                             <table class="table table-hover">
@@ -46,7 +46,7 @@
                                                 <a href="{{route('gallery.edit',$gallery->id)}}">
                                                     <i class="fa-solid fa-pen-to-square" style="font-size:20px;"></i>
                                                 </a>
-                                                <a href="{{route('gallery.destroy',$gallery->id)}}" class="ms-3">
+                                                <a href="{{route('admin.gallery.destroy',$gallery->id)}}" class="ms-3">
                                                     <i class="bi bi-trash-fill text-danger fs-5"></i>
                                                   </a>
                                                 {{-- <form action="#" method="GET" class="d-inline-block">

@@ -15,6 +15,62 @@ use App\Http\Controllers\User\ServicesController;
 use App\Http\Controllers\User\UserIndexController;
 use Illuminate\Support\Facades\Route;
 
+// admin route
+
+Route::prefix('admin')->middleware('admin')->name('admin.')->group(function () {
+
+    // ------------------ admin panel routes ---------------------------------
+    Route::controller(AdminController::class)->group(function () {
+        Route::get('/index', 'index')->name('index');
+    });
+
+    //logout
+    Route::get('/logout',[AuthController::class,'logout'])->name('logout');
+
+    // ------------------ admin blogs routes -----------------------------------
+    Route::controller(BlogController::class)->prefix('/blog')->name('blog.')->group(function () {
+        Route::get('/index', 'index')->name('index');
+        Route::get('/create', 'create')->name('create');
+        Route::post('/store', 'store')->name('store');
+        Route::get('/edit/{id}', 'edit')->name('edit');
+        Route::post('/update/{id}', 'update')->name('update');
+        Route::post('/delete/{id}', 'destroy')->name('destroy');
+    });
+
+    // ------------------ admin contactsUs routes -----------------------------------
+    Route::controller(ContactUsController::class)->prefix('/contact')->name('contact.')->group(function () {
+        Route::get('/index', 'index')->name('index');
+        Route::post('/store', 'store')->name('store');
+    });
+
+    // ------------------ admin gallery routes -----------------------------------
+    Route::controller(GalleryController::class)->prefix('/gallery')->name('gallery.')->group(function () {
+        Route::get('/index', 'index')->name('index');
+        Route::get('/create', 'create')->name('create');
+        Route::post('/store', 'store')->name('store');
+        Route::get('/edit/{id}', 'edit')->name('edit');
+        Route::post('/update/{id}', 'update')->name('update');
+        Route::post('/delete/{id}', 'destroy')->name('destroy');
+    });
+
+    // ------------------ admin settings routes -----------------------------------
+    Route::controller(SettingsController::class)->prefix('/settings')->name('settings.')->group(function () {
+        Route::get('/create', 'create')->name('create');
+        Route::post('/store', 'store')->name('store');
+    });
+});
+
+//guest route
+Route::middleware('guest')->group(function () {
+    Route::controller(AuthController::class)->prefix('admin')->name('admin.')->group(function () {
+        Route::get('/login', 'login')->name('login');
+        Route::get('/register', 'register')->name('register');
+        Route::post('/register/store', 'registerStore')->name('register.store');
+        Route::post('/login/check', 'loginCheck')->name('login.check');
+        
+    });
+});
+
 Route::controller(UserIndexController::class)->name('user.')->group(function () {
     Route::get('/', 'index')->name('index');
 });
@@ -33,6 +89,7 @@ Route::controller(PortfolioController::class)->name('portfolio.')->group(functio
 // ---------------- contact controller -----------------
 Route::controller(ContactController::class)->name('contact.')->group(function () {
     Route::get('/contact', 'index')->name('index');
+    Route::get('/contact/store', 'store')->name('store');
 });
 // ---------------- page controller -----------------
 Route::controller(PageController::class)->prefix('page')->name('page.')->group(function () {
@@ -41,43 +98,5 @@ Route::controller(PageController::class)->prefix('page')->name('page.')->group(f
     Route::get('/element', 'element')->name('element');
     Route::get('/index/portfolioDetails', 'portfolioDetails')->name('portfolioDetails');
 });
-// ------------------ admin panel routes ---------------------------------
-Route::controller(AdminController::class)->prefix('admin')->name('admin.')->group(function () {
-    Route::get('/index', 'index')->name('index');
-});
-// ------------------ admin blogs routes -----------------------------------
-Route::middleware(['auth'])->controller(BlogController::class)->prefix('blog')->name('blog.')->group(function () {
-    Route::get('/index', 'index')->name('index');
-    Route::get('/create', 'create')->name('create');
-    Route::post('/store', 'store')->name('store');
-    Route::get('/edit/{id}', 'edit')->name('edit');
-    Route::post('/update/{id}', 'update')->name('update');
-    Route::post('/delete/{id}', 'destroy')->name('destroy');
 
-});
-// ------------------ admin contactsUs routes -----------------------------------
-Route::middleware(['auth'])->controller(ContactUsController::class)->prefix('contact')->name('contact.')->group(function () {
-    Route::get('/index','index')->name('index.admin');
-    Route::post('/store','store')->name('store');
-});
-// ------------------ admin gallery routes -----------------------------------
-Route::controller(GalleryController::class)->prefix('gallery')->name('gallery.')->group(function () {
-    Route::get('/index','index')->name('index');
-    Route::get('/create','create')->name('create');
-    Route::post('/store','store')->name('store');
-    Route::get('/edit/{id}','edit')->name('edit');
-    Route::post('/update/{id}','update')->name('update');
-    Route::post('/delete/{id}','destroy')->name('destroy');
-});
-// ------------------ admin settings routes -----------------------------------
-Route::middleware(['auth'])->controller(SettingsController::class)->prefix('settings')->name('settings.')->group(function () {
-   Route::get('/create','create')->name('create'); 
-   Route::post('/store','store')->name('store'); 
-});
-Route::controller(AuthController::class)->prefix('auth')->name('auth.')->group(function(){
-    Route::get('/login','login')->name('login');
-    Route::get('/register','register')->name('register');
-    Route::post('/register/store','registerStore')->name('register.store');
-    Route::post('/login/check','loginCheck')->name('login.check');
-    Route::get('/logout','logout')->name('logout');
-});
+

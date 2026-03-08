@@ -30,6 +30,14 @@ class ContactController extends Controller
     public function store(Request $request)
     {
         // 
+        $request->validate([
+            'name'=>'required|string|max:255',
+            'email'=>'required|email',
+            'phone'=>'required|digits:10',
+            'message'=>'required|string|max:255'
+        ]);
+        ContactModel::create($request->all());
+        return redirect()->back()->with('success','Message Send Successfull');
     }
 
     /**

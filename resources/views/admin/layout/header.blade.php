@@ -265,7 +265,7 @@
                         </li>
 
                         <li>
-                            <a class="dropdown-item d-flex align-items-center" href="{{ route('auth.logout') }}">
+                            <a class="dropdown-item d-flex align-items-center" href="{{ route('admin.logout') }}">
                                 <i class="bi bi-box-arrow-right"></i>
                                 <span>Sign Out</span>
                             </a>
@@ -295,26 +295,26 @@
 
             </li><!-- End news Page Nav -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="{{ route('settings.create') }}">
+                <a class="nav-link collapsed" href="{{ route('admin.settings.create') }}">
                     <i class="bi bi-gear"></i>
                     <span>Website Settings</span>
                 </a>
             </li><!-- End Profile Page Nav -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="{{ route('blog.index') }}">
+                <a class="nav-link collapsed" href="{{ route('admin.blog.index') }}">
                     <i class="bi bi-person"></i>
                     <span>Blogs </span>
                 </a>
             </li><!-- End Profile Page Nav -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="{{ route('gallery.index') }}">
+                <a class="nav-link collapsed" href="{{ route('admin.gallery.index') }}">
                     <i class="bi bi-card-image"></i>
                     <span>Gallery </span>
                 </a>
             </li><!-- End Profile Page Nav -->
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="{{ route('contact.index.admin') }}">
+                <a class="nav-link collapsed" href="{{ route('admin.contact.index') }}">
                     <i class="bi bi-envelope"></i>
                     <span>Contact Us</span>
                 </a>

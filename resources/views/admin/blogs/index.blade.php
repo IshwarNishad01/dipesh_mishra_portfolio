@@ -22,7 +22,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Blogs </h5>
-                            <a href="{{ route('blog.create') }}" class="btn btn-primary">+ Add Blog </a>
+                            <a href="{{ route('admin.blog.create') }}" class="btn btn-primary">+ Add Blog </a>
 
                             <!-- Table with hoverable rows -->
                             <table class="table table-hover">
@@ -50,10 +50,10 @@
                                                     width="100px">
                                             </td>
                                             <td>
-                                                <a href="{{ route('blog.edit', $blog->id) }}">
+                                                <a href="{{ route('admin.blog.edit', $blog->id) }}">
                                                     <i class="bi bi-pencil-square fs-5"></i>
                                                 </a>
-                                                <a href="{{ route('blog.destroy', $blog->id) }}" class="ms-3">
+                                                <a href="{{ route('admin.blog.destroy', $blog->id) }}" class="ms-3">
                                                     <i class="bi bi-trash-fill text-danger fs-5"></i>
                                                 </a>
                                             </td>

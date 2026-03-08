@@ -24,7 +24,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Add details</h5>
 
-                            <form method="POST" action="{{route('settings.store')}}" enctype="multipart/form-data">
+                            <form method="POST" action="{{route('admin.settings.store')}}" enctype="multipart/form-data">
                                 @csrf
 
                                 <!-- News Title -->
@@ -67,7 +67,7 @@
                                 <!-- Buttons -->
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-primary">Submit</button>
-                                    <a href="{{route('blog.index')}}" class="btn btn-secondary">back</a>
+                                    {{-- <a href="{{route('blog.index')}}" class="btn btn-secondary">back</a> --}}
                                </div>
 
                             </form>

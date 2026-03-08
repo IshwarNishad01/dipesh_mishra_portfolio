@@ -576,7 +576,7 @@
                             @csrf
                             <input type="text" name="name" placeholder="Full Name" required>
                             <input type="email" name="email" placeholder="Email Address" required>
-                            <input type="text" name="phone" placeholder="Phone Number">
+                            <input type="tel" name="phone" placeholder="Phone Number">
                             <textarea name="message" placeholder="Your Message" required></textarea>
                             <button class="submit-btn2" type="submit">Send Message</button>
                         </form>
