@@ -67,7 +67,7 @@ Route::middleware('guest')->group(function () {
         Route::get('/register', 'register')->name('register');
         Route::post('/register/store', 'registerStore')->name('register.store');
         Route::post('/login/check', 'loginCheck')->name('login.check');
-        
+
     });
 });
 
