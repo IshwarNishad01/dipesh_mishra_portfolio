@@ -46,7 +46,7 @@
                                 <!-- Buttons -->
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-primary">Submit</button>
-                                    <a href="{{route('gallery.index')}}" class="btn btn-secondary">back</a>
+                                    <a href="{{route('admin.gallery.index')}}" class="btn btn-secondary">back</a>
                                </div>
 
                             </form>

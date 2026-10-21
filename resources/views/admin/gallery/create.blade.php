@@ -24,7 +24,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Add images</h5>
 
-                            <form method="POST" action="{{route('admin.gallery.store')}}" enctype="multipart/form-data">
+                            <form method="POST" action="{{ route('admin.gallery.store') }}" enctype="multipart/form-data">
                                 @csrf
 
                                 <!-- News Title -->
@@ -33,20 +33,28 @@
                                     <div class="col-sm-9">
                                         <input type="text" name="title" class="form-control"
                                             placeholder="Enter news title">
+                                        @error('title')
+                                            <p class="text-danger">{{ $message }}</p>
+                                        @enderror
                                     </div>
+
                                 </div>
                                 <!-- Image -->
                                 <div class="row mb-3">
                                     <label class="col-sm-3 col-form-label">Image</label>
                                     <div class="col-sm-9">
                                         <input type="file" name="image" class="form-control">
+                                        @error('image')
+                                            <p class="text-danger">{{ $message }}</p>
+                                        @enderror
                                     </div>
+
                                 </div>
                                 <!-- Buttons -->
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-primary">Submit</button>
-                                    <a href="{{route('gallery.index')}}" class="btn btn-secondary">back</a>
-                               </div>
+                                    <a href="{{ route('admin.gallery.index') }}" class="btn btn-secondary">back</a>
+                                </div>
 
                             </form>
 
